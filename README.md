@@ -232,20 +232,101 @@ A controlled website change and rollback will be demonstrated using GitHub commi
 
 ## 📸 Screenshots
 
-The following screenshots provide evidence of the deployment process:
+The following screenshots provide visual evidence of the complete deployment process.
 
-1. `01-local-website.png` – Local website
-2. `02-github-repository-created.png` – GitHub repository
-3. `03-s3-bucket-configuration.png` – S3 bucket configuration
-4. `04-s3-bucket-created.png` – S3 bucket created
-5. `05-s3-uploaded-files.png` – Website files uploaded to S3
-6. `06-static-website-hosting-configuration.png` – Static website hosting configuration
-7. `07-s3-website-endpoint.png` – S3 website endpoint
-8. `08-block-public-access-disabled.png` – Block Public Access configuration
-9. `09-bucket-policy.png` – Bucket policy
-10. `10-bucket-policy-saved.png` – Saved bucket policy
-11. `11-live-website.png` – Live website
-12. `12-error-page.png` – Custom 404 error page
+### 1. Local Website
+
+![Local Website](01-local-website.png)
+
+The static website was first tested locally before deployment.
+
+---
+
+### 2. GitHub Repository
+
+![GitHub Repository](02-github-repository-created.png)
+
+GitHub repository created for the internship task.
+
+---
+
+### 3. S3 Bucket Configuration
+
+![S3 Bucket Configuration](03-s3-bucket-configuration.png)
+
+Amazon S3 bucket configured in the Mumbai (`ap-south-1`) region.
+
+---
+
+### 4. S3 Bucket Created
+
+![S3 Bucket Created](04-s3-bucket-created.png)
+
+The S3 bucket was successfully created.
+
+---
+
+### 5. Website Files Uploaded to S3
+
+![S3 Uploaded Files](05-s3-uploaded-files.png)
+
+The `index.html`, `style.css`, and `404.html` files were successfully uploaded.
+
+---
+
+### 6. Static Website Hosting Configuration
+
+![Static Website Hosting](06-static-website-hosting-configuration.png)
+
+Static website hosting configured with `index.html` as the index document and `404.html` as the error document.
+
+---
+
+### 7. S3 Website Endpoint
+
+![S3 Website Endpoint](07-s3-website-endpoint.png)
+
+Amazon S3 generated the website endpoint for accessing the deployed website.
+
+---
+
+### 8. Block Public Access Configuration
+
+![Block Public Access](08-block-public-access-disabled.png)
+
+Block Public Access was disabled for the website bucket to allow public access through the configured bucket policy.
+
+---
+
+### 9. Bucket Policy
+
+![Bucket Policy](09-bucket-policy.png)
+
+Bucket policy configured to allow public `s3:GetObject` access to objects in the specific website bucket.
+
+---
+
+### 10. Bucket Policy Successfully Saved
+
+![Bucket Policy Saved](10-bucket-policy-saved.png)
+
+The bucket policy was successfully saved.
+
+---
+
+### 11. Live Website
+
+![Live Website](11-live-website.png)
+
+The static website was successfully accessed through the Amazon S3 website endpoint.
+
+---
+
+### 12. Custom 404 Error Page
+
+![Custom 404 Error Page](12-error-page.png)
+
+The custom `404.html` page was successfully displayed when a nonexistent URL was requested.
 
 
 ## 🎓 Key Learning Outcomes
