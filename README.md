@@ -69,6 +69,7 @@ veda-task2-s3-static-website/
 | Error Document | `404.html`                             |
 | Content Type   | HTML / CSS                             |
 
+
 🏗️ Architecture
                     Visitor
                        │
@@ -85,6 +86,7 @@ veda-task2-s3-static-website/
                 └──────┬──────┘
                        │
                     404.html
+
                     
 🚀 Deployment Steps
 1. Create an S3 Bucket
