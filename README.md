@@ -58,7 +58,8 @@ veda-task2-s3-static-website/
     └── 12-error-page.png
 
 ```
-☁️ AWS S3 Configuration
+
+## ☁️ AWS S3 Configuration
 | Configuration  | Details                                |
 | -------------- | -------------------------------------- |
 | Cloud Service  | Amazon S3                              |
@@ -69,26 +70,44 @@ veda-task2-s3-static-website/
 | Error Document | `404.html`                             |
 | Content Type   | HTML / CSS                             |
 
+     
+## 🏗️ Architecture
 
-🏗️ Architecture
-                    Visitor
-                       │
-                       ▼
-             S3 Website Endpoint
-                       │
-                       ▼
-               Amazon S3 Bucket
-                       │
-                ┌──────┴──────┐
-                │             │
-            index.html     style.css
-                │
-                └──────┬──────┘
-                       │
-                    404.html
+The static website follows this simple deployment flow:
 
-                    
-🚀 Deployment Steps
+**Visitor**  
+↓  
+**S3 Website Endpoint**  
+↓  
+**Amazon S3 Bucket**  
+↓  
+**Website Files**
+
+- `index.html` – Main website page
+- `style.css` – Website styling
+- `404.html` – Custom error page
+
+### Deployment Flow
+
+```text
+Visitor
+   |
+   v
+S3 Website Endpoint
+   |
+   v
+Amazon S3 Bucket
+   |
+   +---- index.html
+   |
+   +---- style.css
+   |
+   +---- 404.html
+
+
+ ```
+                   
+## 🚀 Deployment Steps
 1. Create an S3 Bucket
 
 Created the following S3 bucket in the Mumbai region:
@@ -137,14 +156,15 @@ The deployed website was successfully accessed through the Amazon S3 website end
 
 A nonexistent URL was requested to verify that the configured 404.html page works correctly.
 
-🌐 Live Website
+
+## 🌐 Live Website
 Amazon S3 Website Endpoint
 http://veda-task2-pooja-static-website-2026.s3-website.ap-south-1.amazonaws.com
 
 Note: The direct Amazon S3 website endpoint uses HTTP. For a production deployment requiring HTTPS, Amazon CloudFront can be used in front of the S3 origin.
 
 
-🔐 Security Configuration
+## 🔐 Security Configuration
 
 The bucket policy follows the principle of limited public access.
 
@@ -161,7 +181,8 @@ Listing bucket contents
 
 The public access configuration is applied only to the website bucket and does not expose the entire AWS account.
 
-💰 Cloud Storage vs Virtual Machine
+
+## 💰 Cloud Storage vs Virtual Machine
 Amazon S3
 
 Amazon S3 is suitable for static websites because it stores and serves static files without requiring a continuously running web server.
@@ -186,7 +207,8 @@ For a simple static website, object storage avoids the need to maintain a contin
 
 Actual costs depend on usage, AWS region, account status, and applicable AWS pricing or free-tier offers.
 
-🧪 Testing Performed
+
+## 🧪 Testing Performed
 Test 1 – Website Access
 
 The main website was opened using the S3 website endpoint.
@@ -202,7 +224,7 @@ A nonexistent path was opened:
 Result: Custom 404.html page was displayed successfully.
 
 
-🔄 Rollback Evidence
+## 🔄 Rollback Evidence
 
 The project is maintained using GitHub version history.
 
@@ -210,7 +232,8 @@ Changes to the website can be tracked through Git commits, allowing a previous v
 
 A controlled website change and rollback will be demonstrated using GitHub commit history as part of the project evidence.
 
-📸 Screenshots
+
+## 📸 Screenshots
 
 The screenshots/ directory contains evidence of the deployment process:
 
@@ -228,7 +251,7 @@ Live website
 Custom 404 error page
 
 
-🎓 Key Learning Outcomes
+## 🎓 Key Learning Outcomes
 
 Through this task, I learned:
 
@@ -242,13 +265,13 @@ How to deploy and test a static website
 The difference between object storage and virtual machines
 The importance of limiting public cloud permissions
 
-👩‍💻 Internship Details
+## 👩‍💻 Internship Details
 
 Cloud Computing Internship – Veda Technology
 
 Task 2: Host a Static Website Using Cloud Storage
 
-📌 Conclusion
+## 📌 Conclusion
 
 The static website was successfully deployed using Amazon S3 Static Website Hosting. The website is publicly accessible through the S3 website endpoint, and a custom 404 error page was configured and tested successfully.
 
