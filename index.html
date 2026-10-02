@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Computing | AWS S3 Static Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="brand">☁️ Cloud Computing</div>
+        <span class="badge">AWS S3</span>
+    </header>
+
+    <main>
+        <section class="hero">
+            <p class="eyebrow">VEDA TECHNOLOGY • CLOUD COMPUTING INTERNSHIP</p>
+            <h1>Static Website Hosted on <span>Amazon S3</span></h1>
+            <p class="intro">
+                A simple static website deployed using Amazon S3 Static Website Hosting,
+                without requiring a continuously running virtual machine.
+            </p>
+
+            <div class="actions">
+                <a href="#about" class="btn primary">Explore Project</a>
+                <a href="#architecture" class="btn secondary">View Architecture</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="section-heading">
+                <p class="eyebrow">TASK 2</p>
+                <h2>Host a Static Website Using Cloud Storage</h2>
+            </div>
+
+            <div class="cards">
+                <article class="card">
+                    <div class="icon">🪣</div>
+                    <h3>Amazon S3</h3>
+                    <p>Object storage used to store and serve the website files.</p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">🌐</div>
+                    <h3>Static Hosting</h3>
+                    <p>HTML and CSS content is served directly through an S3 website endpoint.</p>
+                </article>
+
+                <article class="card">
+                    <div class="icon">🔐</div>
+                    <h3>Scoped Access</h3>
+                    <p>Public access is limited to the website objects required for hosting.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="architecture" class="section architecture">
+            <div class="section-heading">
+                <p class="eyebrow">ARCHITECTURE</p>
+                <h2>How the deployment works</h2>
+            </div>
+
+            <div class="flow">
+                <div class="flow-box">👤<strong>Visitor</strong><small>Web Browser</small></div>
+                <div class="arrow">→</div>
+                <div class="flow-box">🌐<strong>S3 Website Endpoint</strong><small>HTTP Request</small></div>
+                <div class="arrow">→</div>
+                <div class="flow-box">🪣<strong>Amazon S3 Bucket</strong><small>Website Objects</small></div>
+            </div>
+        </section>
+
+        <section class="section details">
+            <div>
+                <p class="eyebrow">CONFIGURATION</p>
+                <h2>Deployment Details</h2>
+            </div>
+            <div class="detail-list">
+                <div><span>Cloud Service</span><strong>Amazon S3</strong></div>
+                <div><span>Website Type</span><strong>Static HTML/CSS</strong></div>
+                <div><span>Index Document</span><strong>index.html</strong></div>
+                <div><span>Error Document</span><strong>404.html</strong></div>
+                <div><span>Region</span><strong>ap-south-1 (Mumbai)</strong></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Cloud Computing Internship • Task 2 • Veda Technology</p>
+        <p>Built with HTML & CSS and hosted using Amazon S3.</p>
+    </footer>
+</body>
+</html>

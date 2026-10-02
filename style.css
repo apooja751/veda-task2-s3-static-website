@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --navy: #0f2747;
+    --blue: #2563eb;
+    --orange: #f97316;
+    --light: #f6f9fc;
+    --text: #24344d;
+    --muted: #66758a;
+    --border: #dfe7f1;
+    --white: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--light);
+    line-height: 1.6;
+}
+
+.navbar {
+    height: 72px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.brand {
+    font-weight: 800;
+    font-size: 20px;
+    color: var(--navy);
+}
+
+.badge {
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: #eef4ff;
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+main {
+    max-width: 1120px;
+    margin: auto;
+}
+
+.hero {
+    padding: 100px 7% 90px;
+    text-align: center;
+    background: var(--white);
+    margin: 24px 0;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+}
+
+.eyebrow {
+    color: var(--orange);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    color: var(--navy);
+    font-size: clamp(38px, 6vw, 64px);
+    line-height: 1.1;
+    max-width: 850px;
+    margin: auto;
+}
+
+.hero h1 span {
+    color: var(--blue);
+}
+
+.intro {
+    max-width: 720px;
+    margin: 22px auto;
+    color: var(--muted);
+    font-size: 18px;
+}
+
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 13px 22px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.primary {
+    background: var(--blue);
+    color: white;
+}
+
+.secondary {
+    background: white;
+    color: var(--navy);
+    border: 1px solid var(--border);
+}
+
+.section {
+    padding: 70px 7%;
+    background: var(--white);
+    margin: 24px 0;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section h2 {
+    color: var(--navy);
+    font-size: 32px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 28px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: #fbfdff;
+}
+
+.icon {
+    font-size: 30px;
+    margin-bottom: 14px;
+}
+
+.card h3 {
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: var(--muted);
+}
+
+.flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.flow-box {
+    min-width: 200px;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    background: #fbfdff;
+    font-size: 28px;
+}
+
+.flow-box strong,
+.flow-box small {
+    display: block;
+}
+
+.flow-box strong {
+    color: var(--navy);
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+.flow-box small {
+    color: var(--muted);
+    font-size: 13px;
+}
+
+.arrow {
+    color: var(--blue);
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.detail-list {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.detail-list div {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 18px;
+    border-bottom: 1px solid var(--border);
+}
+
+.detail-list div:last-child {
+    border-bottom: 0;
+}
+
+.detail-list span {
+    color: var(--muted);
+}
+
+.detail-list strong {
+    color: var(--navy);
+}
+
+footer {
+    text-align: center;
+    padding: 35px 20px 45px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+@media (max-width: 750px) {
+    .cards,
+    .details {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 70px 6%;
+    }
+
+    .section {
+        padding: 50px 6%;
+    }
+
+    .arrow {
+        transform: rotate(90deg);
+    }
+}
