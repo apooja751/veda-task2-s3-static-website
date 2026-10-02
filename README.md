@@ -225,9 +225,16 @@ Result: Custom 404.html page was displayed successfully.
 
 The project is maintained using GitHub version history.
 
-Changes to the website can be tracked through Git commits, allowing a previous version of the website files to be restored when required.
+A controlled rollback test was performed on `index.html` without changing the website design or functionality.
 
-A controlled website change and rollback will be demonstrated using GitHub commit history as part of the project evidence.
+The rollback process was demonstrated through Git commits:
+
+1. `Test rollback: update website metadata`
+2. `Rollback website metadata test`
+
+The temporary metadata change was removed and the original version of `index.html` was restored successfully.
+
+This demonstrates how GitHub version history can be used to track changes and restore a previous version when required.
 
 
 ## 📸 Screenshots
