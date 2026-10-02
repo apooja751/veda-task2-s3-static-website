@@ -159,11 +159,11 @@ A nonexistent URL was requested to verify that the configured 404.html page work
 
 ---
 
-## 🌐 Live Website
-Amazon S3 Website Endpoint
-http://veda-task2-pooja-static-website-2026.s3-website.ap-south-1.amazonaws.com
+🌐 Live Website
 
-Note: The direct Amazon S3 website endpoint uses HTTP. For a production deployment requiring HTTPS, Amazon CloudFront can be used in front of the S3 origin.
+The static website was successfully deployed and tested using Amazon S3 during the internship task.
+
+Note: The AWS S3 hosting environment was removed after successful task submission to avoid unnecessary ongoing cloud resources/costs. Deployment screenshots and configuration details are included in this repository.
 
 ---
 
