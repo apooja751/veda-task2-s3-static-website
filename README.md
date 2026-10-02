@@ -37,26 +37,23 @@ To host a static HTML/CSS website using Amazon S3 and configure:
 ```text
 veda-task2-s3-static-website/
 │
+├── 404.html
 ├── index.html
 ├── style.css
-├── 404.html
-├── aws-s3-bucket-policy.json
 ├── README.md
 │
-└── screenshots/
-    ├── 01-local-website.png
-    ├── 02-github-repository-created.png
-    ├── 03-s3-bucket-configuration.png
-    ├── 04-s3-bucket-created.png
-    ├── 05-s3-uploaded-files.png
-    ├── 06-static-website-hosting-configuration.png
-    ├── 07-s3-website-endpoint.png
-    ├── 08-block-public-access-disabled.png
-    ├── 09-bucket-policy.png
-    ├── 10-bucket-policy-saved.png
-    ├── 11-live-website.png
-    └── 12-error-page.png
-
+├── 01-local-website.png
+├── 02-github-repository-created.png
+├── 03-s3-bucket-configuration.png
+├── 04-s3-bucket-created.png
+├── 05-s3-uploaded-files.png
+├── 06-static-website-hosting-configuration.png
+├── 07-s3-website-endpoint.png
+├── 08-block-public-access-disabled.png
+├── 09-bucket-policy.png
+├── 10-bucket-policy-saved.png
+├── 11-live-website.png
+└── 12-error-page.png
 ```
 
 ## ☁️ AWS S3 Configuration
@@ -235,20 +232,20 @@ A controlled website change and rollback will be demonstrated using GitHub commi
 
 ## 📸 Screenshots
 
-The screenshots/ directory contains evidence of the deployment process:
+The following screenshots provide evidence of the deployment process:
 
-Local website
-GitHub repository creation
-S3 bucket configuration
-S3 bucket creation
-Website files uploaded to S3
-Static website hosting configuration
-S3 website endpoint
-Block Public Access configuration
-Bucket policy
-Saved bucket policy
-Live website
-Custom 404 error page
+1. `01-local-website.png` – Local website
+2. `02-github-repository-created.png` – GitHub repository
+3. `03-s3-bucket-configuration.png` – S3 bucket configuration
+4. `04-s3-bucket-created.png` – S3 bucket created
+5. `05-s3-uploaded-files.png` – Website files uploaded to S3
+6. `06-static-website-hosting-configuration.png` – Static website hosting configuration
+7. `07-s3-website-endpoint.png` – S3 website endpoint
+8. `08-block-public-access-disabled.png` – Block Public Access configuration
+9. `09-bucket-policy.png` – Bucket policy
+10. `10-bucket-policy-saved.png` – Saved bucket policy
+11. `11-live-website.png` – Live website
+12. `12-error-page.png` – Custom 404 error page
 
 
 ## 🎓 Key Learning Outcomes
