@@ -67,7 +67,8 @@ veda-task2-s3-static-website/
 | Error Document | `404.html`                             |
 | Content Type   | HTML / CSS                             |
 
-     
+---
+
 ## 🏗️ Architecture
 
 The static website follows this simple deployment flow:
@@ -83,6 +84,8 @@ The static website follows this simple deployment flow:
 - `index.html` – Main website page
 - `style.css` – Website styling
 - `404.html` – Custom error page
+  
+---
 
 ### Deployment Flow
 
@@ -103,7 +106,8 @@ Amazon S3 Bucket
 
 
  ```
-                   
+---
+
 ## 🚀 Deployment Steps
 1. Create an S3 Bucket
 
@@ -153,6 +157,7 @@ The deployed website was successfully accessed through the Amazon S3 website end
 
 A nonexistent URL was requested to verify that the configured 404.html page works correctly.
 
+---
 
 ## 🌐 Live Website
 Amazon S3 Website Endpoint
@@ -160,6 +165,7 @@ http://veda-task2-pooja-static-website-2026.s3-website.ap-south-1.amazonaws.com
 
 Note: The direct Amazon S3 website endpoint uses HTTP. For a production deployment requiring HTTPS, Amazon CloudFront can be used in front of the S3 origin.
 
+---
 
 ## 🔐 Security Configuration
 
@@ -178,6 +184,7 @@ Listing bucket contents
 
 The public access configuration is applied only to the website bucket and does not expose the entire AWS account.
 
+---
 
 ## 💰 Cloud Storage vs Virtual Machine
 Amazon S3
@@ -204,6 +211,7 @@ For a simple static website, object storage avoids the need to maintain a contin
 
 Actual costs depend on usage, AWS region, account status, and applicable AWS pricing or free-tier offers.
 
+---
 
 ## 🧪 Testing Performed
 Test 1 – Website Access
@@ -220,6 +228,7 @@ A nonexistent path was opened:
 
 Result: Custom 404.html page was displayed successfully.
 
+---
 
 ## 🔄 Rollback Evidence
 
@@ -335,6 +344,15 @@ The static website was successfully accessed through the Amazon S3 website endpo
 
 The custom `404.html` page was successfully displayed when a nonexistent URL was requested.
 
+---
+
+### 13. Rollback Evidence
+
+![Rollback Evidence](13-rollback-evidence.png)
+
+GitHub commit history showing the temporary website metadata change and its subsequent rollback.
+
+---
 
 ## 🎓 Key Learning Outcomes
 
@@ -350,11 +368,15 @@ How to deploy and test a static website
 The difference between object storage and virtual machines
 The importance of limiting public cloud permissions
 
+---
+
 ## 👩‍💻 Internship Details
 
 Cloud Computing Internship – Veda Technology
 
 Task 2: Host a Static Website Using Cloud Storage
+
+---
 
 ## 📌 Conclusion
 
